@@ -1,7 +1,12 @@
+# NOTE: This MakeFile is configured to build and inject into the iOS simulator
+# It will need to be modified for building for an hardware iOS device
+
 THEOS_PACKAGE_DIR_NAME = debs
 TARGET = simulator:clang::7.0
+
 ARCHS = x86_64 i386
 DEBUG = 0
+
 PACKAGE_VERSION = $(THEOS_PACKAGE_VERSION)
 
 include $(THEOS)/makefiles/common.mk
