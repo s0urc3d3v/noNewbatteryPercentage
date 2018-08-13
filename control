@@ -1,0 +1,9 @@
+Package: net.techredesign.customNoNewNotifictionsTextLS
+Name: No New Battery Percentage
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Replace "No New Notifications with your battery percentage"
+Maintainer: s0urc3
+Author: s0urc3
+Section: Tweaks
