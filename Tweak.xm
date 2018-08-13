@@ -12,8 +12,11 @@
 
 - (void) _updateHintTitle {
   %orig;
+  
+  //Get current battery percentage
   float batteryLevelAsFloat = [self getBatteryPercentage];
-  int batteryLevelAsInt = ((int)(batteryLevelAsFloat));
+  int batteryLevelAsInt = ((int)(batteryLevelAsFloat)); //Convert battery level to an int
+  
   NSString *batteryLevelAsNSString =[NSString stringWithFormat:@"%s %d%s", "Your battery is at", abs(batteryLevelAsInt), "\%"];
 
   self.revealHintTitle.string = batteryLevelAsNSString;
